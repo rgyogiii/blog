@@ -4496,7 +4496,7 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  /* background-color: rgba(0, 0, 0, 0.03); */
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer {
@@ -10996,6 +10996,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 body {
   font-size: 1.25rem;
 }
@@ -11049,13 +11052,13 @@ blockquote {
   font-weight: 800;
 }
 #mainNav .navbar-toggler {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 800;
   padding: 0.75rem;
   text-transform: uppercase;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
@@ -11113,8 +11116,8 @@ blockquote {
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 header.masthead {
@@ -11191,7 +11194,7 @@ header.masthead .post-heading .meta a {
   header.masthead .page-heading h1, header.masthead .page-heading .h1,
 header.masthead .site-heading h1,
 header.masthead .site-heading .h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   header.masthead .post-heading h1, header.masthead .post-heading .h1 {
     font-size: 3.5rem;
@@ -11199,6 +11202,17 @@ header.masthead .site-heading .h1 {
   header.masthead .post-heading .subheading {
     font-size: 1.875rem;
   }
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.bgimg{
+  background-image: url('./assets/img/cover.jpg');
 }
 
 .section-heading {
@@ -11235,7 +11249,14 @@ header.masthead .site-heading .h1 {
 .post-preview > .post-meta {
   font-size: 1.125rem;
   font-style: italic;
-  margin-top: 0;
+  margin: 0;
+  color: #6c757d;
+}
+
+.post-preview > .post-author {
+  font-size: 1.125rem;
+  font-style: italic;
+  margin: 0;
   color: #6c757d;
 }
 .post-preview > .post-meta > a {
@@ -11244,5 +11265,38 @@ header.masthead .site-heading .h1 {
 @media (min-width: 992px) {
   .post-preview > a > .post-title {
     font-size: 2.25rem;
+  }
+}
+
+
+.card-body > .widget-category, .card-body > .widget-2ndcategory, .card-body > .widget-3rdcategory {
+  font-size: 1.575rem;
+  margin-top: 1.875rem;
+  margin-bottom: 0.125rem;
+}
+
+.card-body > .widget-category{
+  color: #6500CC;
+}
+
+.card-body > .widget-2ndcategory{
+  color: #1F6F1F;
+}
+
+.card-body > .widget-3rdcategory{
+  color: #CC0001;
+}
+
+
+
+.card-body > a > .widget-title {
+  font-size: 1.05rem;
+  font-weight: 400rem;
+  margin-bottom: 0.625rem;
+}
+
+@media (min-width: 992px) {
+  .card-body > .widget-category, .card-body > .widget-2ndcategory, .card-body > .widget-3rdcategory {
+    font-size: 1.25rem;
   }
 }
